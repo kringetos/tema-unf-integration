@@ -1,0 +1,13 @@
+{
+  "odata_url": "http://127.0.0.1/UNF/odata/standard.odata",
+  "odata_user": "integration_user",
+  "odata_password": "",
+  "bridge_url": "",
+  "timeout": 20,
+  "journal": "requests.sqlite3",
+  "order_statuses": {},
+  "defaults": {"organization_guid": ""},
+  "contact_writes_enabled": false,
+  "cors_allowed_origins": [],
+  "print_commands": {"kp": "КоммерческоеПредложение"}
+}

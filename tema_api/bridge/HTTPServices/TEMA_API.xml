@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" version="2.17" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config">
+	<HTTPService uuid="867f86e4-a523-4c63-aa63-b525bd5f8f23">
+		<Properties>
+			<Name>TEMA_API</Name>
+			<RootURL>tema_bridge</RootURL>
+			<ReuseSessions>DontUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="5301bee9-ee18-476b-9bd9-aecdfc409539">
+				<Properties>
+					<Name>ВсеМаршруты</Name>
+					<Template>/*</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="e0cd6999-352a-48b3-93a9-6d2ef673f707">
+						<Properties>
+							<Name>GET</Name>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>Обработать</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="e08e1bce-a53a-417d-8fdb-5721b32180cb">
+						<Properties>
+							<Name>POST</Name>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>Обработать</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="d3cee644-1a9b-42ed-bd4b-bfff8378094e">
+						<Properties>
+							<Name>PATCH</Name>
+							<HTTPMethod>PATCH</HTTPMethod>
+							<Handler>Обработать</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>

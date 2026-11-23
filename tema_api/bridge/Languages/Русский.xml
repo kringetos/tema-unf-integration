@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" version="2.17" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config">
+	<Language uuid="6289a6f5-a0c3-4383-b72b-c54a8c685f4f">
+		<InternalInfo />
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Русский</Name>
+			<ExtendedConfigurationObject>af1b61ff-d1b9-4053-ad85-8259b6626adc</ExtendedConfigurationObject>
+			<LanguageCode>ru</LanguageCode>
+		</Properties>
+	</Language>
+</MetaDataObject>

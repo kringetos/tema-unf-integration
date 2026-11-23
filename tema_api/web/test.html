@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Тест API ТеМа</title>
+  <link rel="stylesheet" href="/test.css">
+  <script src="/test.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/test" aria-label="API ТеМа — тестовая форма"><span class="brand-mark">Т</span><span>API <b>ТеМа</b></span></a>
+    <div class="connection"><span id="healthDot" class="dot"></span><span id="healthText">Проверяем соединение…</span><button id="healthRefresh" class="icon-button" title="Проверить соединение" aria-label="Проверить соединение">↻</button></div>
+  </header>
+
+  <main>
+    <div class="page-heading">
+      <div><p class="eyebrow">ИНТЕГРАЦИЯ · ПЕСОЧНИЦА</p><h1>Тестирование API</h1><p class="subtitle">Проверяйте методы Python API и расширения 1С на тестовой базе.</p></div>
+      <span class="environment"><span class="environment-dot"></span>Тестовая база 1С</span>
+    </div>
+
+    <section class="auth-card panel">
+      <div class="section-heading"><div><h2>Подключение</h2><p>Токен хранится только в памяти этой вкладки.</p></div><span class="lock-icon">⌑</span></div>
+      <label for="token">Bearer-токен</label>
+      <div class="token-row"><input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="Вставьте API-токен из настроек интеграции"><button id="toggleToken" class="secondary-button">Показать</button></div>
+    </section>
+
+    <div class="workspace">
+      <section class="panel request-panel">
+        <div class="section-heading"><div><h2>Запрос</h2><p>Выберите метод из контракта или укажите путь вручную.</p></div><span class="step-number">01</span></div>
+        <div class="presets" id="presets" role="tablist" aria-label="Методы API"></div>
+        <div class="field-grid">
+          <div><label for="method">Метод</label><select id="method"><option>GET</option><option>POST</option><option>PATCH</option></select></div>
+          <div><label for="path">Путь API</label><input id="path" type="text" spellcheck="false" placeholder="/counterparties?page=1&amp;limit=20"></div>
+        </div>
+        <div class="body-heading"><label for="body">Тело запроса <span class="optional">JSON · для POST и PATCH</span></label><button id="formatJson" class="text-button">Форматировать</button></div>
+        <textarea id="body" rows="17" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
+        <div class="request-actions"><button id="send" class="primary-button"><span>Отправить запрос</span><span aria-hidden="true">→</span></button><span class="shortcut">Запрос уйдёт на <code>localhost:8770</code></span></div>
+      </section>
+
+      <section class="panel response-panel">
+        <div class="section-heading"><div><h2>Ответ</h2><p>Результат и время выполнения последнего запроса.</p></div><span class="step-number">02</span></div>
+        <div id="responseEmpty" class="response-empty"><div class="empty-icon">{ }</div><strong>Ответ появится здесь</strong><span>Авторизуйтесь токеном и отправьте запрос.</span></div>
+        <div id="responseContent" class="response-content" hidden>
+          <div class="response-meta"><span id="statusBadge" class="status-badge"></span><span id="responseTime"></span><button id="copyResponse" class="text-button">Скопировать JSON</button></div>
+          <pre id="responseJson" class="json-output"></pre>
+          <div id="pdfResult" class="pdf-result" hidden><a id="pdfOpen" class="secondary-button" target="_blank" rel="noopener">Открыть PDF</a><a id="pdfDownload" class="text-button" download>Скачать PDF</a></div>
+        </div>
+        <div class="response-footer"><span class="footer-pip"></span>Защищённые методы требуют Bearer-токен.</div>
+      </section>
+    </div>
+
+    <section class="panel guide-panel">
+      <div class="section-heading"><div><h2>Быстрые подсказки</h2><p>Документы создаются последовательно: заказ → счёт → акт. Подставляйте ID из предыдущего ответа.</p></div></div>
+      <div class="guide-grid"><div><span class="guide-mark">↗</span><div><b>Связанные документы</b><p>Возьмите коды клиента и товара из ответов API, подставьте в заказ, затем укажите ID заказа при создании счёта.</p></div></div><div><span class="guide-mark">▧</span><div><b>Печатные формы</b><p>Укажите путь, например <code>/order/НОМЕР/kp/pdf</code>, затем нажмите «Отправить».</p></div></div><div><span class="guide-mark">⟳</span><div><b>Повтор POST</b><p>Для каждой записи создаётся уникальный ключ повтора запроса.</p></div></div></div>
+    </section>
+    <footer><span>API ТеМа · локальная форма для тестирования</span><span>Токен не сохраняется в хранилище браузера</span></footer>
+  </main>
+</body>
+</html>

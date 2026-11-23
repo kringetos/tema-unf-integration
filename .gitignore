@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Secrets and local runtime state
+config/settings.local.json
+config/*secret*
+*.sqlite3
+*.db
+*.log
+*.cfe
+*.bak
+
+# Generated documents and local verification artifacts
+output/
+

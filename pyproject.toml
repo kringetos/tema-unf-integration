@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tema-unf-integration"
+version = "0.1.0"
+description = "Python API facade and 1C UNF HTTP extension for TeMa"
+requires-python = ">=3.11"
+dependencies = ["reportlab==4.4.9"]
+
+[tool.setuptools.packages.find]
+include = ["tema_api*"]

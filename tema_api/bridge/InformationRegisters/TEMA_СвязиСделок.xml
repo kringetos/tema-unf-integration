@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" version="2.17" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<InformationRegister uuid="b5b06827-d539-48c9-8b55-d8565b92918c">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.TEMA_СвязиСделок" category="Record">
+				<xr:TypeId>eae64876-05a7-468f-a321-ff56eb549c92</xr:TypeId>
+				<xr:ValueId>36ea523d-e498-4d86-bbae-d538985dae55</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.TEMA_СвязиСделок" category="Manager">
+				<xr:TypeId>28b4b92d-5d73-4646-ac39-810dd125ea21</xr:TypeId>
+				<xr:ValueId>3826f70a-cb18-4e4c-917d-f482c6ab709b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.TEMA_СвязиСделок" category="Selection">
+				<xr:TypeId>e2967a5b-e62b-4a86-a360-701cd16e086e</xr:TypeId>
+				<xr:ValueId>9458e929-cacc-4a45-b19d-4819958da31e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.TEMA_СвязиСделок" category="List">
+				<xr:TypeId>a84f0ecf-0957-4820-9c50-866cf9d5af0e</xr:TypeId>
+				<xr:ValueId>9e17fff9-f680-4e9e-8f54-16d4d9b590c5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.TEMA_СвязиСделок" category="RecordSet">
+				<xr:TypeId>d7388784-4b0e-4c45-861f-f2fc794ef800</xr:TypeId>
+				<xr:ValueId>ceabd7fc-8d93-4e07-865b-1017428386ab</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.TEMA_СвязиСделок" category="RecordKey">
+				<xr:TypeId>3da8a473-9354-497c-99c4-12b2ecb73e9f</xr:TypeId>
+				<xr:ValueId>1a48170e-ca45-4924-8922-b5bd0e8ea83e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.TEMA_СвязиСделок" category="RecordManager">
+				<xr:TypeId>a6a47eab-0426-474a-a6bf-173989154197</xr:TypeId>
+				<xr:ValueId>775b7da4-6721-4fac-8196-5da11a498911</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>TEMA_СвязиСделок</Name>
+			<UseStandardCommands>false</UseStandardCommands>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="a83993f8-7340-460c-8244-194fe02d4ddb">
+				<Properties>
+					<Name>ИдентификаторДокумента</Name>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>true</DenyIncompleteValues>
+				</Properties>
+			</Dimension>
+			<Resource uuid="48ca5a8f-7bd4-4b68-aae2-d46b708faccf">
+				<Properties>
+					<Name>ИдентификаторСделки</Name>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>18</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
